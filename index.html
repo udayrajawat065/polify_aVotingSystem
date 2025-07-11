@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pollify - Vote Now!</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- <script src="script.js"></script> -->
+</head>
+<div class="chart-container">
+<canvas id="pollChart" width="300" height="200"></canvas>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<body>
+    <h1 style="position: absolute; top: 15px;">WELCOME !</h1>
+  <div class="container">
+    <h1>🗳 Pollify</h1>
+    <p>Which JavaScript framework do you love the most?</p>
+
+    <div class="options">
+      <button onclick="vote('react')">React</button>
+      <button onclick="vote('vue')">Vue</button>
+      <button onclick="vote('angular')">Angular</button>
+      <button onclick="resetVotes()">Reset</button>
+    </div>
+
+    <h2>Live Results</h2>
+    <div class="results">
+      <div>React: <span id="reactCount">0</span></div>
+      <div>Vue: <span id="vueCount">0</span></div>
+      <div>Angular: <span id="angularCount">0</span></div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
