@@ -9,10 +9,10 @@ let votes = {
 // Function to vote
  function vote(option) {
 //   ✅ Step 1: Check if user already voted
-  if (localStorage.getItem("voted")) {
-    alert("You've already voted!");
-    return;
-  }
+  // if (localStorage.getItem("voted")) {
+  //   alert("You've already voted!");
+  //   return;
+  // }
 
   // ✅ Step 2: Increase vote count
   votes[option]++;
